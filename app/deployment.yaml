@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yeaktonghan-devops-simple-spring-deployment
+  labels:
+    app: yeaktonghan-devops-simple-spring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yeaktonghan-devops-simple-spring
+  template:
+    metadata:
+      labels:
+        app: yeaktonghan-devops-simple-spring
+    spec:
+      containers:
+        - name: yeaktonghan-devops-simple-spring
+          image: kshrdautopilot/yeaktonghan-devops-simple-spring
+          ports:
+            - containerPort: 8080
