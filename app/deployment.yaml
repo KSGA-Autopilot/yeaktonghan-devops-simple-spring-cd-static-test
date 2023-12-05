@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: yeaktonghan-devops-simple-spring
-          image: kshrdautopilot/yeaktonghan-devops-simple-spring:2023-12-05-14-16-29
+          image: kshrdautopilot/yeaktonghan-devops-simple-spring:2023-12-05-14-26-56
           ports:
             - containerPort: 8080
